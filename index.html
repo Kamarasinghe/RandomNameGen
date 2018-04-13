@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Random Name Generator Examples</title>
+<link href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+<link href="https://fonts.googleapis.com/css?family=Bilbo+Swash+Caps|Iceland" rel="stylesheet">
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
+  <script
+          src="https://code.jquery.com/jquery-3.3.1.min.js"
+          integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+          crossorigin="anonymous"></script>
+  <!-- grab data -->
+  <script src="first-names.js"></script>
+  <script src="last-names.js"></script>
+  <script src="middle-names.js"></script>
+  <!-- import functions -->
+  <script src="randomNameGenerator.js"></script>
+  <script src="clickHandlers.js"></script>
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.6.0/p5.js"></script>
+  <script type="text/javascript" src='Node.js'></script>
+</head>
+<body>
+<!--   <div class="container">
+    <div class="theThings"><button class='btn btn-primary' id="singleName">Single Name</button></div>
+    <div class="theThings"><button class='btn btn-primary' id="listOfNames">List</button></div>
+    <div class="theThings"><button class='btn btn-primary' id="listOfNamesOfSize">List of size:</button></div>
+    <div class="theThings"><input id="numberOfNames" type="text" size="6" placeholder="A number"></div>
+    <div class="theThings"><button class='btn btn-primary' id="specificInitial">Specific Initials:</button></div>
+    <div class="theThings"><input id="specificInitialint" type="text" size="5" placeholder="ex. D.O.G"></div>
+  </div>
+  <div class="theThings">
+    <div id=results class="col alert alert-primary"></div>
+  </div> --> 
+  <div class="card-group">
+  <div class="card text-center">
+    <img class="card-img-top singleImage" src="Silhouette.jpg" alt="Card image cap">
+    <div class="card-body singleName2">
+      <h5 class="card-title">Single Name</h5>
+      <p class="card-text">Generate a name with a random first, middle, and last name</p>
+      <div class="theThings"><button class='btn btn-primary' id="singleName">Single Name</button></div>
+    </div>
+  </div>
+  <div class="card text-center">
+    <div class="areaForList"></div>
+    <div class="card-body">
+      <h5 class="card-title">List of Names</h5>
+      <p class="card-text">Generate a list with random first, middle, and last names</p>
+      <div class="theThings"><button class='btn btn-primary' id="listOfNames">Generate List</button></div>
+    </div>
+  </div>
+  <div class="card text-center">
+    <div class="areaForList2"></div>
+    <div class="card-body">
+      <h5 class="card-title">Specified Length</h5>
+      <p class="card-text">Generate a list of a specified length containing random first, middle, and last names</p>
+      <div class="theThings"><button class='btn btn-primary' id="listOfNamesOfSize">List of Specified Amount</button></div>
+      <div class="theThings"><input id="numberOfNames" type="text" size="6" placeholder="A number"></div>
+    </div>
+  </div>
+  <div class="card text-center">
+    <img class="card-img-top initialImg" src="Silhouette.jpg" alt="Card image cap">
+    <div class="card-body specifiedInit">
+      <h5 class="card-title">From Initials</h5>
+      <p class="card-text">Generate a random first, middle, last name that matches specified initials</p>
+      <div class="theThings"><button class='btn btn-primary' id="specificInitial">Specific Initials</button></div>
+      <div class="theThings"><input id="specificInitialint" type="text" size="5" placeholder="ex. D.O.G"></div>
+    </div>
+  </div>
+</div>
+</body>
+</html>

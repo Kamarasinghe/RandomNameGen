@@ -1,0 +1,42 @@
+.container {
+	display: flex;
+	justify-content: center;
+}
+
+.center {
+	display: flex;
+	justify-content: center;
+}
+
+.areaForList, .areaForList2 {
+	padding-top: 20px;
+	height: 324px;
+	overflow-y: scroll;
+	font-family: 'Bilbo Swash Caps', cursive;
+	font-size: 2em;
+	text-shadow: 2px 2px grey;
+}
+
+.card-img-top {
+	height: 324px;
+	width: 336px;
+}
+
+.card-title {
+	font-family: 'Iceland', cursive;
+	font-size: 2em;
+}
+
+.theThings {
+	flex: 1;
+}
+
+.areaForList, .areaForList2 {
+  background: #007991; /* fallback for old browsers */
+  background: -webkit-linear-gradient(to bottom, #007991, #78ffd6); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to bottom, #007991, #78ffd6); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+::-webkit-input-placeholder {
+   text-align: center;
+}
